@@ -1,0 +1,37 @@
+{
+  "name": "@mizdra/poke-nature-util",
+  "version": "0.0.1",
+  "description": "ポケモン性格ユーティリティクラス",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha --compilers ts:espower-typescript/guess test/**/*-test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizdra/poke-nature-util.git"
+  },
+  "keywords": [
+    "pokemon",
+    "rng"
+  ],
+  "author": "mizdra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mizdra/poke-nature/issues"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "espower-typescript": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.10.0",
+    "gulp-uglify": "^1.5.1",
+    "merge2": "^0.3.6",
+    "power-assert": "^1.2.0",
+    "run-sequence": "^1.1.5",
+    "typescript-require": "^0.2.9-1"
+  },
+  "files": [
+      "lib"
+  ]
+}

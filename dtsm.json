@@ -1,0 +1,44 @@
+{
+  "repos": [
+    {
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "ref": "master"
+    }
+  ],
+  "path": "typings",
+  "bundle": "typings/bundle.d.ts",
+  "link": {
+    "npm": {
+      "include": true
+    }
+  },
+  "dependencies": {
+    "run-sequence/run-sequence.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    },
+    "del/del.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    },
+    "gulp/gulp.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    },
+    "gulp-typescript/gulp-typescript.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    },
+    "gulp-sourcemaps/gulp-sourcemaps.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    },
+    "gulp-uglify/gulp-uglify.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    },
+    "merge2/merge2.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    },
+    "power-assert/power-assert.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    },
+    "mocha/mocha.d.ts": {
+      "ref": "d8359c5a99c7965a51dcf0e26b65170f2c53af80"
+    }
+  }
+}
