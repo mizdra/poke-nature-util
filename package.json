@@ -17,9 +17,6 @@
   ],
   "author": "mizdra",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mizdra/poke-nature/issues"
-  },
   "devDependencies": {
     "del": "^2.2.0",
     "espower-typescript": "^3.0.0",
