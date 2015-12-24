@@ -14,4 +14,8 @@ export default class PokeNatureUtil {
     static toString(natureNum: number): string {
         return this.natures[natureNum];
     }
+    
+    static getArray(): string[] {
+        return this.natures;
+    }
 }
