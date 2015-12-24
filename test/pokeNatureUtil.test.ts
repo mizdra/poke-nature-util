@@ -31,4 +31,32 @@ describe('PokeNatureUtil', () => {
         assert(PokeNatureUtil.toIndex('しんちょう') === 23);
         assert(PokeNatureUtil.toIndex('きまぐれ') === 24);
     });
+    
+    it('toName', () => {
+        assert(PokeNatureUtil.toName(0) === 'がんばりや');
+        assert(PokeNatureUtil.toName(1) === 'さみしがり');
+        assert(PokeNatureUtil.toName(2) === 'ゆうかん');
+        assert(PokeNatureUtil.toName(3) === 'いじっぱり');
+        assert(PokeNatureUtil.toName(4) === 'やんちゃ');
+        assert(PokeNatureUtil.toName(5) === 'ずぶとい');
+        assert(PokeNatureUtil.toName(6) === 'すなお');
+        assert(PokeNatureUtil.toName(7) === 'のんき');
+        assert(PokeNatureUtil.toName(8) === 'わんぱく');
+        assert(PokeNatureUtil.toName(9) === 'のうてんき');
+        assert(PokeNatureUtil.toName(10) === 'おくびょう');
+        assert(PokeNatureUtil.toName(11) === 'せっかち');
+        assert(PokeNatureUtil.toName(12) === 'まじめ');
+        assert(PokeNatureUtil.toName(13) === 'ようき');
+        assert(PokeNatureUtil.toName(14) === 'むじゃき');
+        assert(PokeNatureUtil.toName(15) === 'ひかえめ');
+        assert(PokeNatureUtil.toName(16) === 'おっとり');
+        assert(PokeNatureUtil.toName(17) === 'れいせい');
+        assert(PokeNatureUtil.toName(18) === 'てれや');
+        assert(PokeNatureUtil.toName(19) === 'うっかりや');
+        assert(PokeNatureUtil.toName(20) === 'おだやか');
+        assert(PokeNatureUtil.toName(21) === 'おとなしい');
+        assert(PokeNatureUtil.toName(22) === 'なまいき');
+        assert(PokeNatureUtil.toName(23) === 'しんちょう');
+        assert(PokeNatureUtil.toName(24) === 'きまぐれ');
+    });
 });
