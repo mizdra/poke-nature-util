@@ -7,15 +7,15 @@ export default class PokeNatureUtil {
         "おだやか", "おとなしい", "なまいき", "しんちょう", "きまぐれ"
     ];
 
-    static toNumber(natureName: string): number {
-        return this.natures.indexOf(natureName);
+    static toIndex(name: string): number {
+        return this.natures.indexOf(name);
     }
 
-    static toString(natureNum: number): string {
-        return this.natures[natureNum];
+    static toName(idx: number): string {
+        return this.natures[idx];
     }
     
-    static getArray(): string[] {
+    static getNameArray(): string[] {
         return this.natures;
     }
 }
