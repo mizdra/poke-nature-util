@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "ポケモン性格ユーティリティクラス",
   "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "scripts": {
     "test": "mocha --compilers ts:espower-typescript/guess test/**/*.test.ts"
   },
