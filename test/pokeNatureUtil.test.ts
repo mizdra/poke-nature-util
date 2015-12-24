@@ -31,7 +31,7 @@ describe('PokeNatureUtil', () => {
         assert(PokeNatureUtil.toIndex('しんちょう') === 23);
         assert(PokeNatureUtil.toIndex('きまぐれ') === 24);
     });
-    
+
     it('toName', () => {
         assert(PokeNatureUtil.toName(0) === 'がんばりや');
         assert(PokeNatureUtil.toName(1) === 'さみしがり');
@@ -58,5 +58,17 @@ describe('PokeNatureUtil', () => {
         assert(PokeNatureUtil.toName(22) === 'なまいき');
         assert(PokeNatureUtil.toName(23) === 'しんちょう');
         assert(PokeNatureUtil.toName(24) === 'きまぐれ');
+    });
+
+    it('getNameArray', () => {
+        let actual = PokeNatureUtil.getNameArray();
+        let expect = [
+            "がんばりや", "さみしがり", "ゆうかん", "いじっぱり", "やんちゃ",
+            "ずぶとい", "すなお", "のんき", "わんぱく", "のうてんき",
+            "おくびょう", "せっかち", "まじめ", "ようき", "むじゃき",
+            "ひかえめ", "おっとり", "れいせい", "てれや", "うっかりや",
+            "おだやか", "おとなしい", "なまいき", "しんちょう", "きまぐれ"
+        ];
+        assert.deepEqual(actual, expect);
     });
 });
