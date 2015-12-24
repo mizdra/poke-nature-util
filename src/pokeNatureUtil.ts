@@ -1,5 +1,5 @@
 export default class PokeNatureUtil {
-    private static natures: string[] = [
+    private static NATURES: string[] = [
         "がんばりや", "さみしがり", "ゆうかん", "いじっぱり", "やんちゃ",
         "ずぶとい", "すなお", "のんき", "わんぱく", "のうてんき",
         "おくびょう", "せっかち", "まじめ", "ようき", "むじゃき",
@@ -16,15 +16,15 @@ export default class PokeNatureUtil {
     ];
 
     static toIndex(name: string): number {
-        return this.natures.indexOf(name);
+        return this.NATURES.indexOf(name);
     }
 
     static toName(idx: number): string {
-        return this.natures[idx];
+        return this.NATURES[idx];
     }
     
     static getNameArray(): string[] {
-        return this.natures;
+        return this.NATURES;
     }
     
     static getFavoriteFlavor(idx: number): string {
