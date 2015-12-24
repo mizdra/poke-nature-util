@@ -4,7 +4,7 @@
   "description": "ポケモン性格ユーティリティクラス",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha --compilers ts:espower-typescript/guess test/**/*-test.ts"
+    "test": "mocha --compilers ts:espower-typescript/guess test/**/*.test.ts"
   },
   "repository": {
     "type": "git",
