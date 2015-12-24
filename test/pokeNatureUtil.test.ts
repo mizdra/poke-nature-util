@@ -155,4 +155,32 @@ describe('PokeNatureUtil', () => {
         assert(PokeNatureUtil.getFavoriteFlavor(23) === 'にがい');
         assert(PokeNatureUtil.getFavoriteFlavor(24) === null);
     });
+
+    it('getDislikedFlavor', () => {
+        assert(PokeNatureUtil.getDislikedFlavor(0) === null);
+        assert(PokeNatureUtil.getDislikedFlavor(1) === 'すっぱい');
+        assert(PokeNatureUtil.getDislikedFlavor(2) === 'あまい');
+        assert(PokeNatureUtil.getDislikedFlavor(3) === 'しぶい');
+        assert(PokeNatureUtil.getDislikedFlavor(4) === 'にがい');
+        assert(PokeNatureUtil.getDislikedFlavor(5) === 'からい');
+        assert(PokeNatureUtil.getDislikedFlavor(6) === null);
+        assert(PokeNatureUtil.getDislikedFlavor(7) === 'あまい');
+        assert(PokeNatureUtil.getDislikedFlavor(8) === 'しぶい');
+        assert(PokeNatureUtil.getDislikedFlavor(9) === 'にがい');
+        assert(PokeNatureUtil.getDislikedFlavor(10) === 'からい');
+        assert(PokeNatureUtil.getDislikedFlavor(11) === 'すっぱい');
+        assert(PokeNatureUtil.getDislikedFlavor(12) === null);
+        assert(PokeNatureUtil.getDislikedFlavor(13) === 'しぶい');
+        assert(PokeNatureUtil.getDislikedFlavor(14) === 'にがい');
+        assert(PokeNatureUtil.getDislikedFlavor(15) === 'からい');
+        assert(PokeNatureUtil.getDislikedFlavor(16) === 'すっぱい');
+        assert(PokeNatureUtil.getDislikedFlavor(17) === 'あまい');
+        assert(PokeNatureUtil.getDislikedFlavor(18) === null);
+        assert(PokeNatureUtil.getDislikedFlavor(19) === 'にがい');
+        assert(PokeNatureUtil.getDislikedFlavor(20) === 'からい');
+        assert(PokeNatureUtil.getDislikedFlavor(21) === 'すっぱい');
+        assert(PokeNatureUtil.getDislikedFlavor(22) === 'あまい');
+        assert(PokeNatureUtil.getDislikedFlavor(23) === 'しぶい');
+        assert(PokeNatureUtil.getDislikedFlavor(24) === null);
+    });
 });
