@@ -14,6 +14,14 @@ export default class PokeNatureUtil {
         "しぶい", "しぶい", "しぶい", null, "しぶい",
         "にがい", "にがい", "にがい", "にがい", null
     ];
+    
+    private static DISLIKED_FLAVORS: string[] = [
+        null, "すっぱい", "あまい", "しぶい", "にがい",
+        "からい", null, "あまい", "しぶい", "にがい",
+        "からい", "すっぱい", null, "しぶい", "にがい",
+        "からい", "すっぱい", "あまい", null, "にがい",
+        "からい", "すっぱい", "あまい", "しぶい", null
+    ];
 
     static toIndex(name: string): number {
         return this.NATURES.indexOf(name);
@@ -29,5 +37,9 @@ export default class PokeNatureUtil {
     
     static getFavoriteFlavor(idx: number): string {
         return this.FAVORITE_FLAVORS[idx];
+    }
+    
+    static getDislikedFlavor(idx: number): string {
+        return this.DISLIKED_FLAVORS[idx];
     }
 }
