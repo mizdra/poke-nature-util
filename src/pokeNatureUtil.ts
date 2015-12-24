@@ -6,7 +6,23 @@ export default class PokeNatureUtil {
         "ひかえめ", "おっとり", "れいせい", "てれや", "うっかりや",
         "おだやか", "おとなしい", "なまいき", "しんちょう", "きまぐれ"
     ];
-    
+
+    private static INCREASED_STATS: string[] = [
+        null, "こうげき", "こうげき", "こうげき", "こうげき",
+        "ぼうぎょ", null, "ぼうぎょ", "ぼうぎょ", "ぼうぎょ",
+        "すばやさ", "すばやさ", null, "すばやさ", "すばやさ",
+        "とくこう", "とくこう", "とくこう", null, "とくこう",
+        "とくぼう", "とくぼう", "とくぼう", "とくぼう", null
+    ];
+
+    private static DECREASED_STATS: string[] = [
+        null, "ぼうぎょ", "すばやさ", "とくこう", "とくぼう",
+        "こうげき", null, "すばやさ", "とくこう", "とくぼう",
+        "こうげき", "ぼうぎょ", null, "とくこう", "とくぼう",
+        "こうげき", "ぼうぎょ", "すばやさ", null, "とくぼう",
+        "こうげき", "ぼうぎょ", "すばやさ", "とくこう", null
+    ];
+
     private static FAVORITE_FLAVORS: string[] = [
         null, "からい", "からい", "からい", "からい",
         "すっぱい", null, "すっぱい", "すっぱい", "すっぱい",
@@ -14,7 +30,7 @@ export default class PokeNatureUtil {
         "しぶい", "しぶい", "しぶい", null, "しぶい",
         "にがい", "にがい", "にがい", "にがい", null
     ];
-    
+
     private static DISLIKED_FLAVORS: string[] = [
         null, "すっぱい", "あまい", "しぶい", "にがい",
         "からい", null, "あまい", "しぶい", "にがい",
@@ -30,15 +46,23 @@ export default class PokeNatureUtil {
     static toName(idx: number): string {
         return this.NATURES[idx];
     }
-    
+
     static getNameArray(): string[] {
         return this.NATURES;
     }
-    
+
+    static getIncreasedStat(idx: number): string {
+        return this.INCREASED_STATS[idx];
+    }
+
+    static getDecreasedStat(idx: number): string {
+        return this.DECREASED_STATS[idx];
+    }
+
     static getFavoriteFlavor(idx: number): string {
         return this.FAVORITE_FLAVORS[idx];
     }
-    
+
     static getDislikedFlavor(idx: number): string {
         return this.DISLIKED_FLAVORS[idx];
     }
