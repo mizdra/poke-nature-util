@@ -1,3 +1,5 @@
+'use strict';
+
 export default class PokeNatureUtil {
     private static NATURES: string[] = [
         "がんばりや", "さみしがり", "ゆうかん", "いじっぱり", "やんちゃ",
