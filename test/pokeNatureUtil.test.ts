@@ -71,4 +71,32 @@ describe('PokeNatureUtil', () => {
         ];
         assert.deepEqual(actual, expect);
     });
+
+    it('getIncreasedStat', () => {
+        assert(PokeNatureUtil.getIncreasedStat(0) === null);
+        assert(PokeNatureUtil.getIncreasedStat(1) === 'こうげき');
+        assert(PokeNatureUtil.getIncreasedStat(2) === 'こうげき');
+        assert(PokeNatureUtil.getIncreasedStat(3) === 'こうげき');
+        assert(PokeNatureUtil.getIncreasedStat(4) === 'こうげき');
+        assert(PokeNatureUtil.getIncreasedStat(5) === 'ぼうぎょ');
+        assert(PokeNatureUtil.getIncreasedStat(6) === null);
+        assert(PokeNatureUtil.getIncreasedStat(7) === 'ぼうぎょ');
+        assert(PokeNatureUtil.getIncreasedStat(8) === 'ぼうぎょ');
+        assert(PokeNatureUtil.getIncreasedStat(9) === 'ぼうぎょ');
+        assert(PokeNatureUtil.getIncreasedStat(10) === 'すばやさ');
+        assert(PokeNatureUtil.getIncreasedStat(11) === 'すばやさ');
+        assert(PokeNatureUtil.getIncreasedStat(12) === null);
+        assert(PokeNatureUtil.getIncreasedStat(13) === 'すばやさ');
+        assert(PokeNatureUtil.getIncreasedStat(14) === 'すばやさ');
+        assert(PokeNatureUtil.getIncreasedStat(15) === 'とくこう');
+        assert(PokeNatureUtil.getIncreasedStat(16) === 'とくこう');
+        assert(PokeNatureUtil.getIncreasedStat(17) === 'とくこう');
+        assert(PokeNatureUtil.getIncreasedStat(18) === null);
+        assert(PokeNatureUtil.getIncreasedStat(19) === 'とくこう');
+        assert(PokeNatureUtil.getIncreasedStat(20) === 'とくぼう');
+        assert(PokeNatureUtil.getIncreasedStat(21) === 'とくぼう');
+        assert(PokeNatureUtil.getIncreasedStat(22) === 'とくぼう');
+        assert(PokeNatureUtil.getIncreasedStat(23) === 'とくぼう');
+        assert(PokeNatureUtil.getIncreasedStat(24) === null);
+    });
 });
