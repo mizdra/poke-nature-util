@@ -54,7 +54,7 @@ export default class PokeNature {
     }
 
     toIndex(): number {
-        return PokeNature.NATURES.indexOf(name);
+        return this.idx;
     }
 
     toName(): string {
