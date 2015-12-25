@@ -1,6 +1,6 @@
 'use strict';
 
-export default class PokeNatureUtil {
+export default class PokeNature {
     private static NATURES: string[] = [
         "がんばりや", "さみしがり", "ゆうかん", "いじっぱり", "やんちゃ",
         "ずぶとい", "すなお", "のんき", "わんぱく", "のうてんき",
