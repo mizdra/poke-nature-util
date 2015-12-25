@@ -1,7 +1,7 @@
 {
-  "name": "@mizdra/poke-nature-util",
+  "name": "@mizdra/poke-nature",
   "version": "0.0.1",
-  "description": "ポケモン性格ユーティリティクラス",
+  "description": "ポケモン性格クラス",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mizdra/poke-nature-util.git"
+    "url": "https://github.com/mizdra/poke-nature.git"
   },
   "keywords": [
     "pokemon",
