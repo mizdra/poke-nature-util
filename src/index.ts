@@ -1,3 +1,3 @@
 'use strict';
 
-export {default} from './pokeNatureUtil';
+export {default} from './pokeNature';
