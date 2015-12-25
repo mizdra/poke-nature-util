@@ -40,32 +40,44 @@ export default class PokeNature {
         "からい", "すっぱい", "あまい", null, "にがい",
         "からい", "すっぱい", "あまい", "しぶい", null
     ];
+    
+    private idx: number;
 
-    static toIndex(name: string): number {
-        return this.NATURES.indexOf(name);
+    constructor(name: string);
+    constructor(idx: number);
+    constructor(nature: any) {
+        if (typeof nature === 'string') {
+            this.idx = PokeNature.NATURES.indexOf(nature);
+        } else {
+            this.idx = nature;
+        }
     }
 
-    static toName(idx: number): string {
-        return this.NATURES[idx];
+    toIndex(): number {
+        return PokeNature.NATURES.indexOf(name);
     }
 
-    static getNameArray(): string[] {
-        return this.NATURES;
+    toName(): string {
+        return PokeNature.NATURES[this.idx];
     }
 
-    static getIncreasedStat(idx: number): string {
-        return this.INCREASED_STATS[idx];
+    getNameArray(): string[] {
+        return PokeNature.NATURES;
     }
 
-    static getDecreasedStat(idx: number): string {
-        return this.DECREASED_STATS[idx];
+    getIncreasedStat(): string {
+        return PokeNature.INCREASED_STATS[this.idx];
     }
 
-    static getFavoriteFlavor(idx: number): string {
-        return this.FAVORITE_FLAVORS[idx];
+    getDecreasedStat(): string {
+        return PokeNature.DECREASED_STATS[this.idx];
     }
 
-    static getDislikedFlavor(idx: number): string {
-        return this.DISLIKED_FLAVORS[idx];
+    getFavoriteFlavor(): string {
+        return PokeNature.FAVORITE_FLAVORS[this.idx];
+    }
+
+    getDislikedFlavor(): string {
+        return PokeNature.DISLIKED_FLAVORS[this.idx];
     }
 }
