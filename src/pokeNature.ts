@@ -61,10 +61,6 @@ export default class PokeNature {
         return PokeNature.NATURES[this.idx];
     }
 
-    getNameArray(): string[] {
-        return PokeNature.NATURES;
-    }
-
     getIncreasedStat(): string {
         return PokeNature.INCREASED_STATS[this.idx];
     }
@@ -79,5 +75,9 @@ export default class PokeNature {
 
     getDislikedFlavor(): string {
         return PokeNature.DISLIKED_FLAVORS[this.idx];
+    }
+
+    static getNameArray(): string[] {
+        return PokeNature.NATURES;
     }
 }
