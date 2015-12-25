@@ -1,6 +1,6 @@
 {
   "name": "@mizdra/poke-nature",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ポケモン性格クラス",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
