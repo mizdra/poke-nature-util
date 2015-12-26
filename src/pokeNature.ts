@@ -43,7 +43,7 @@ export default class PokeNature {
     
     private idx: number;
 
-    constructor(name: string);
+    constructor(str: string);
     constructor(idx: number);
     constructor(nature: any) {
         if (typeof nature === 'string') {
@@ -53,11 +53,11 @@ export default class PokeNature {
         }
     }
 
-    toIndex(): number {
+    toNumber(): number {
         return this.idx;
     }
 
-    toName(): string {
+    toString(): string {
         return PokeNature.NATURES[this.idx];
     }
 

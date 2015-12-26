@@ -16,8 +16,8 @@ import PokeNature from '@mizdra/poke-nature';
 let nature = new PokeNature('おくびょう');
 // or ... let nature = new PokeNature(10);
 
-console.log(nature.toIndex()); // 10
-console.log(nature.toName()); // 'おくびょう'
+console.log(nature.toNumber()); // 10
+console.log(nature.toString()); // 'おくびょう'
 console.log(nature.getIncreasedStat()); // 'すばやさ'
 console.log(nature.getDecreasedStat()); // 'こうげき'
 console.log(nature.getFavoriteFlavor()); // 'あまい'
