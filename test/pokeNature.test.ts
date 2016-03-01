@@ -4,7 +4,7 @@ import PokeNature from '../';
 import assert from 'power-assert';
 
 describe('PokeNature', () => {
-    it('toNumber', () => {
+    it('PokeNature.toNumber', () => {
         assert(PokeNature.toNumber('がんばりや') === 0);
         assert(PokeNature.toNumber('さみしがり') === 1);
         assert(PokeNature.toNumber('ゆうかん') === 2);
@@ -32,7 +32,7 @@ describe('PokeNature', () => {
         assert(PokeNature.toNumber('きまぐれ') === 24);
     });
 
-    it('toString', () => {
+    it('PokeNature.toString', () => {
         assert(PokeNature.toString(0) === 'がんばりや');
         assert(PokeNature.toString(1) === 'さみしがり');
         assert(PokeNature.toString(2) === 'ゆうかん');
@@ -60,7 +60,7 @@ describe('PokeNature', () => {
         assert(PokeNature.toString(24) === 'きまぐれ');
     });
 
-    it('getNameArray', () => {
+    it('PokeNature.getNameArray', () => {
         let actual = PokeNature.getNameArray();
         let expect = [
             "がんばりや", "さみしがり", "ゆうかん", "いじっぱり", "やんちゃ",
@@ -72,7 +72,7 @@ describe('PokeNature', () => {
         assert.deepEqual(actual, expect);
     });
 
-    it('getIncreasedStat', () => {
+    it('PokeNature.getIncreasedStat', () => {
         assert(PokeNature.getIncreasedStat(0) === null);
         assert(PokeNature.getIncreasedStat(1) === 'こうげき');
         assert(PokeNature.getIncreasedStat(2) === 'こうげき');
@@ -100,7 +100,7 @@ describe('PokeNature', () => {
         assert(PokeNature.getIncreasedStat(24) === null);
     });
 
-    it('getDecreasedStat', () => {
+    it('PokeNature.getDecreasedStat', () => {
         assert(PokeNature.getDecreasedStat(0) === null);
         assert(PokeNature.getDecreasedStat(1) === 'ぼうぎょ');
         assert(PokeNature.getDecreasedStat(2) === 'すばやさ');
@@ -128,7 +128,7 @@ describe('PokeNature', () => {
         assert(PokeNature.getDecreasedStat(24) === null);
     });
 
-    it('getFavoriteFlavor', () => {
+    it('PokeNature.getFavoriteFlavor', () => {
         assert(PokeNature.getFavoriteFlavor(0) === null);
         assert(PokeNature.getFavoriteFlavor(1) === 'からい');
         assert(PokeNature.getFavoriteFlavor(2) === 'からい');
@@ -156,7 +156,7 @@ describe('PokeNature', () => {
         assert(PokeNature.getFavoriteFlavor(24) === null);
     });
 
-    it('getDislikedFlavor', () => {
+    it('PokeNature.getDislikedFlavor', () => {
         assert(PokeNature.getDislikedFlavor(0) === null);
         assert(PokeNature.getDislikedFlavor(1) === 'すっぱい');
         assert(PokeNature.getDislikedFlavor(2) === 'あまい');
