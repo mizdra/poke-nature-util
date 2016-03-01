@@ -1,7 +1,7 @@
 'use strict';
 
 export default class PokeNature {
-    private static NATURES: string[] = [
+    private static NAMES: string[] = [
         'がんばりや', 'さみしがり', 'ゆうかん', 'いじっぱり', 'やんちゃ',
         'ずぶとい', 'すなお', 'のんき', 'わんぱく', 'のうてんき',
         'おくびょう', 'せっかち', 'まじめ', 'ようき', 'むじゃき',
@@ -40,44 +40,32 @@ export default class PokeNature {
         'からい', 'すっぱい', 'あまい', null, 'にがい',
         'からい', 'すっぱい', 'あまい', 'しぶい', null
     ];
-    
-    private idx: number;
 
-    constructor(str: string);
-    constructor(idx: number);
-    constructor(nature: any) {
-        if (typeof nature === 'string') {
-            this.idx = PokeNature.NATURES.indexOf(nature);
-        } else {
-            this.idx = nature;
-        }
+    static toNumber(name: string): number {
+        return PokeNature.NAMES.indexOf(name);
     }
 
-    toNumber(): number {
-        return this.idx;
+    static toString(num: number): string {
+        return PokeNature.NAMES[num];
     }
 
-    toString(): string {
-        return PokeNature.NATURES[this.idx];
+    static getIncreasedStat(num: number): string {
+        return PokeNature.INCREASED_STATS[num];
     }
 
-    getIncreasedStat(): string {
-        return PokeNature.INCREASED_STATS[this.idx];
+    static getDecreasedStat(num: number): string {
+        return PokeNature.DECREASED_STATS[num];
     }
 
-    getDecreasedStat(): string {
-        return PokeNature.DECREASED_STATS[this.idx];
+    static getFavoriteFlavor(num: number): string {
+        return PokeNature.FAVORITE_FLAVORS[num];
     }
 
-    getFavoriteFlavor(): string {
-        return PokeNature.FAVORITE_FLAVORS[this.idx];
-    }
-
-    getDislikedFlavor(): string {
-        return PokeNature.DISLIKED_FLAVORS[this.idx];
+    static getDislikedFlavor(num: number): string {
+        return PokeNature.DISLIKED_FLAVORS[num];
     }
 
     static getNameArray(): string[] {
-        return PokeNature.NATURES;
+        return PokeNature.NAMES;
     }
 }
