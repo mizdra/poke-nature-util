@@ -4,6 +4,67 @@ import PokeNature from '../';
 import assert from 'power-assert';
 
 describe('PokeNature', () => {
+
+    it('PokeNature.NAMES', () => {
+        const actual: string[] = PokeNature.NAMES;
+        const expect: string[] = [
+            'がんばりや', 'さみしがり', 'ゆうかん', 'いじっぱり', 'やんちゃ',
+            'ずぶとい', 'すなお', 'のんき', 'わんぱく', 'のうてんき',
+            'おくびょう', 'せっかち', 'まじめ', 'ようき', 'むじゃき',
+            'ひかえめ', 'おっとり', 'れいせい', 'てれや', 'うっかりや',
+            'おだやか', 'おとなしい', 'なまいき', 'しんちょう', 'きまぐれ'
+        ];
+        assert.deepEqual(actual, expect);
+    });
+
+    it('PokeNature.INCREASED_STATS', () => {
+        const actual: string[] = PokeNature.INCREASED_STATS;
+        const expect: string[] = [
+            null, 'こうげき', 'こうげき', 'こうげき', 'こうげき',
+            'ぼうぎょ', null, 'ぼうぎょ', 'ぼうぎょ', 'ぼうぎょ',
+            'すばやさ', 'すばやさ', null, 'すばやさ', 'すばやさ',
+            'とくこう', 'とくこう', 'とくこう', null, 'とくこう',
+            'とくぼう', 'とくぼう', 'とくぼう', 'とくぼう', null
+        ];
+        assert.deepEqual(actual, expect);
+    });
+
+    it('PokeNature.DECREASED_STATS', () => {
+        const actual: string[] = PokeNature.DECREASED_STATS;
+        const expect: string[] = [
+            null, 'ぼうぎょ', 'すばやさ', 'とくこう', 'とくぼう',
+            'こうげき', null, 'すばやさ', 'とくこう', 'とくぼう',
+            'こうげき', 'ぼうぎょ', null, 'とくこう', 'とくぼう',
+            'こうげき', 'ぼうぎょ', 'すばやさ', null, 'とくぼう',
+            'こうげき', 'ぼうぎょ', 'すばやさ', 'とくこう', null
+        ];
+        assert.deepEqual(actual, expect);
+    });
+
+    it('PokeNature.FAVORITE_FLAVORS', () => {
+        const actual: string[] = PokeNature.FAVORITE_FLAVORS;
+        const expect: string[] = [
+            null, 'からい', 'からい', 'からい', 'からい',
+            'すっぱい', null, 'すっぱい', 'すっぱい', 'すっぱい',
+            'あまい', 'あまい', null, 'あまい', 'あまい',
+            'しぶい', 'しぶい', 'しぶい', null, 'しぶい',
+            'にがい', 'にがい', 'にがい', 'にがい', null
+        ];
+        assert.deepEqual(actual, expect);
+    });
+
+    it('PokeNature.DISLIKED_FLAVORS', () => {
+        const actual: string[] = PokeNature.DISLIKED_FLAVORS;
+        const expect: string[] = [
+            null, 'すっぱい', 'あまい', 'しぶい', 'にがい',
+            'からい', null, 'あまい', 'しぶい', 'にがい',
+            'からい', 'すっぱい', null, 'しぶい', 'にがい',
+            'からい', 'すっぱい', 'あまい', null, 'にがい',
+            'からい', 'すっぱい', 'あまい', 'しぶい', null
+        ];
+        assert.deepEqual(actual, expect);
+    });
+
     it('PokeNature.toNumber', () => {
         assert(PokeNature.toNumber('がんばりや') === 0);
         assert(PokeNature.toNumber('さみしがり') === 1);
@@ -58,18 +119,6 @@ describe('PokeNature', () => {
         assert(PokeNature.toString(22) === 'なまいき');
         assert(PokeNature.toString(23) === 'しんちょう');
         assert(PokeNature.toString(24) === 'きまぐれ');
-    });
-
-    it('PokeNature.getNameArray', () => {
-        let actual = PokeNature.getNameArray();
-        let expect = [
-            "がんばりや", "さみしがり", "ゆうかん", "いじっぱり", "やんちゃ",
-            "ずぶとい", "すなお", "のんき", "わんぱく", "のうてんき",
-            "おくびょう", "せっかち", "まじめ", "ようき", "むじゃき",
-            "ひかえめ", "おっとり", "れいせい", "てれや", "うっかりや",
-            "おだやか", "おとなしい", "なまいき", "しんちょう", "きまぐれ"
-        ];
-        assert.deepEqual(actual, expect);
     });
 
     it('PokeNature.getIncreasedStat', () => {
