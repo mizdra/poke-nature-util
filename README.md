@@ -13,16 +13,17 @@ $ npm install @mizdra/poke-nature
 ```js
 import PokeNature from '@mizdra/poke-nature';
 
-let nature = new PokeNature('おくびょう');
-// or ... let nature = new PokeNature(10);
-
-console.log(nature.toNumber()); // 10
-console.log(nature.toString()); // 'おくびょう'
-console.log(nature.getIncreasedStat()); // 'すばやさ'
-console.log(nature.getDecreasedStat()); // 'こうげき'
-console.log(nature.getFavoriteFlavor()); // 'あまい'
-console.log(nature.getDislikedFlavor()); // 'からい'
-console.log(PokeNature.getNameArray()); // ['がんばりや', 'さみしがり', ...]
+console.log(PokeNature.toNumber('おくびょう')); // 10
+console.log(PokeNature.toString(10)); // 'おくびょう'
+console.log(PokeNature.getIncreasedStat(10)); // 'すばやさ'
+console.log(PokeNature.getDecreasedStat(10)); // 'こうげき'
+console.log(PokeNature.getFavoriteFlavor(10)); // 'あまい'
+console.log(PokeNature.getDislikedFlavor(10)); // 'からい'
+console.log(PokeNature.NAMES); // ['がんばりや', 'さみしがり', ...]
+console.log(PokeNature.INCREASED_STATS); // [null, 'こうげき', ...]
+console.log(PokeNature.DECREASED_STATS); // [null, 'ぼうぎょ', ...]
+console.log(PokeNature.FAVORITE_FLAVORS); // [null, 'からい', ...]
+console.log(PokeNature.DISLIKED_FLAVORS); // [null, 'すっぱい', ...]
 
 ```
 
