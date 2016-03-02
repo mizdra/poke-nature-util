@@ -4,6 +4,7 @@
   "description": "ポケモン性格クラス",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
+  "engines": {"node" : ">=0.12"},
   "scripts": {
     "clean": "$(npm bin)/gulp clean",
     "build": "$(npm bin)/gulp build",

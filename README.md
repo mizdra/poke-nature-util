@@ -1,4 +1,4 @@
-# poke-nature
+# poke-nature [![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url]
 ポケモン性格クラス。
 
 ## 特徴
