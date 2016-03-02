@@ -1,9 +1,9 @@
 'use strict';
 
-import PokeNature from '../';
+import {ja as PokeNature} from '../../';
 import assert from 'power-assert';
 
-describe('PokeNature', () => {
+describe('ja/PokeNature', () => {
 
     it('PokeNature.NAMES', () => {
         const actual: string[] = PokeNature.NAMES;

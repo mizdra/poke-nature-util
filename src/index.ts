@@ -1,3 +1,3 @@
 'use strict';
 
-export {default} from './pokeNature';
+export {default as ja} from './ja/pokeNature';
