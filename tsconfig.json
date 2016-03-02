@@ -6,8 +6,6 @@
         "removeComments": false,
         "preserveConstEnums": true,
         "experimentalDecorators": true,
-        "declaration": true,
-        "listFiles": true,
-        "noEmitOnError": true
+        "declaration": true
     }
 }

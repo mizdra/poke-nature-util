@@ -31,13 +31,16 @@ console.log(PokeNature.DISLIKED_FLAVORS); // [null, 'すっぱい', ...]
 ```bash
 $ git clone https://github.com/mizdra/poke-nature.git
 $ cd poke-nature
-$ npm install -g  mocha gulp dtsm
 $ npm install
-$ dtsm install
-$ gulp
+$ npm run build
 ```
 
-### テスト
+## テスト
 ```bash
-$ npm test
+$ npm run test
+```
+
+## 構文チェック
+```bash
+$ npm run lint
 ```
