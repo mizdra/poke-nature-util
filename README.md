@@ -11,7 +11,7 @@ $ npm install @mizdra/poke-nature
 
 ## 使い方
 ```js
-import PokeNature from '@mizdra/poke-nature';
+import {ja as PokeNature} from '@mizdra/poke-nature';
 
 console.log(PokeNature.toNumber('おくびょう')); // 10
 console.log(PokeNature.toString(10)); // 'おくびょう'
@@ -24,8 +24,12 @@ console.log(PokeNature.INCREASED_STATS); // [null, 'こうげき', ...]
 console.log(PokeNature.DECREASED_STATS); // [null, 'ぼうぎょ', ...]
 console.log(PokeNature.FAVORITE_FLAVORS); // [null, 'からい', ...]
 console.log(PokeNature.DISLIKED_FLAVORS); // [null, 'すっぱい', ...]
-
 ```
+
+## 対応言語
+| de | en | es | fr | it | ja | ko |
+|----|----|----|----|----|----|----|
+| ✗ | ✗ | ✗ | ✗ | ✗ | ✓ | ✗ |
 
 ## ビルド
 ```bash
