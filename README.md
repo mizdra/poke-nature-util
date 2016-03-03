@@ -29,7 +29,7 @@ console.log(PokeNature.DISLIKED_FLAVORS); // [null, 'すっぱい', ...]
 ## 対応言語
 | de | en | es | fr | it | ja | ko |
 |----|----|----|----|----|----|----|
-| ✗ | ✗ | ✗ | ✗ | ✗ | ✓ | ✗ |
+|    |    |    |    |    | ✓ |   |
 
 ## ビルド
 ```bash
