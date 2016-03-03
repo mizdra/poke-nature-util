@@ -1,4 +1,4 @@
-# poke-nature [![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url]
+# poke-nature [![npm (scoped)][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 ポケモン性格クラス。
 
 ## 特徴
@@ -44,3 +44,8 @@ $ npm run test
 ```bash
 $ npm run lint
 ```
+
+[npm-image]: https://img.shields.io/npm/v/@mizdra/poke-nature.svg
+[npm-url]: https://www.npmjs.com/package/@mizdra/poke-nature
+[travis-image]: https://travis-ci.org/mizdra/poke-nature.svg?branch=master
+[travis-url]: https://travis-ci.org/mizdra/poke-nature
