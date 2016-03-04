@@ -1,5 +1,5 @@
 # poke-nature [![npm (scoped)][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
-Provides utility methods to get information of nature.
+Provides utility methods to get information of Pokemon's Natures.
 
 ## Install
 ```bash
