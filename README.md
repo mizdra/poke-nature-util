@@ -1,15 +1,12 @@
 # poke-nature [![npm (scoped)][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
-ポケモン性格クラス。
+Provides utility methods to get information of nature.
 
-## 特徴
-- TypeScriptによる型補完。
-
-## インストール
+## Install
 ```bash
 $ npm install @mizdra/poke-nature
 ```
 
-## 使い方
+## Usage
 ```js
 import {ja as PokeNature} from '@mizdra/poke-nature';
 
@@ -26,12 +23,12 @@ console.log(PokeNature.FAVORITE_FLAVORS); // [null, 'からい', ...]
 console.log(PokeNature.DISLIKED_FLAVORS); // [null, 'すっぱい', ...]
 ```
 
-## 対応言語
+## Language
 | de | en | es | fr | it | ja | ko |
 |----|----|----|----|----|----|----|
 |    |    |    |    |    | ✓ |   |
 
-## ビルド
+## Build
 ```bash
 $ git clone https://github.com/mizdra/poke-nature.git
 $ cd poke-nature
@@ -39,12 +36,12 @@ $ npm install
 $ npm run build
 ```
 
-## テスト
+## Test
 ```bash
 $ npm run test
 ```
 
-## 構文チェック
+## Lint
 ```bash
 $ npm run lint
 ```
