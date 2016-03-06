@@ -41,27 +41,27 @@ export default class PokeNature {
         'spicy', 'sour', 'sweet', 'dry', null
     ];
 
-    static toNumber(name: string): number {
+    static toId(name: string): number {
         return PokeNature.NAMES.indexOf(name);
     }
 
-    static toString(num: number): string {
-        return PokeNature.NAMES[num];
+    static toName(id: number): string {
+        return PokeNature.NAMES[id];
     }
 
-    static getIncreasedStat(num: number): string {
-        return PokeNature.INCREASED_STATS[num];
+    static getIncreasedStat(id: number): string {
+        return PokeNature.INCREASED_STATS[id];
     }
 
-    static getDecreasedStat(num: number): string {
-        return PokeNature.DECREASED_STATS[num];
+    static getDecreasedStat(id: number): string {
+        return PokeNature.DECREASED_STATS[id];
     }
 
-    static getFavoriteFlavor(num: number): string {
-        return PokeNature.FAVORITE_FLAVORS[num];
+    static getFavoriteFlavor(id: number): string {
+        return PokeNature.FAVORITE_FLAVORS[id];
     }
 
-    static getDislikedFlavor(num: number): string {
-        return PokeNature.DISLIKED_FLAVORS[num];
+    static getDislikedFlavor(id: number): string {
+        return PokeNature.DISLIKED_FLAVORS[id];
     }
 }
