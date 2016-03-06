@@ -7,7 +7,7 @@ var ts = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
 var tsProject = ts.createProject('tsconfig.json');
 
-gulp.task('build', function () {
+gulp.task('build', () => {
     var tsResult = gulp.src('./src/**/*.ts')
         .pipe(sourcemaps.init())
         .pipe(ts(tsProject));
@@ -20,7 +20,7 @@ gulp.task('build', function () {
     ]);
 });
 
-gulp.task('watch', ['default'], function () {
+gulp.task('watch', ['default'], () => {
     gulp.watch('src/**/*.ts', ['build']);
 });
 

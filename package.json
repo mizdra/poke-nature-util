@@ -1,7 +1,7 @@
 {
   "name": "@mizdra/poke-nature",
   "version": "0.2.0",
-  "description": "ポケモン性格クラス",
+  "description": "Provides utility methods to get information of Pokemon's Natures.",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "engines": {
