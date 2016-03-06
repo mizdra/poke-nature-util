@@ -8,25 +8,41 @@ $ npm install @mizdra/poke-nature
 
 ## Usage
 ```js
-import {ja as PokeNature} from '@mizdra/poke-nature';
+import PokeNature from '@mizdra/poke-nature';
 
-console.log(PokeNature.toNumber('おくびょう')); // 10
-console.log(PokeNature.toString(10)); // 'おくびょう'
-console.log(PokeNature.getIncreasedStat(10)); // 'すばやさ'
-console.log(PokeNature.getDecreasedStat(10)); // 'こうげき'
-console.log(PokeNature.getFavoriteFlavor(10)); // 'あまい'
-console.log(PokeNature.getDislikedFlavor(10)); // 'からい'
-console.log(PokeNature.NAMES); // ['がんばりや', 'さみしがり', ...]
-console.log(PokeNature.INCREASED_STATS); // [null, 'こうげき', ...]
-console.log(PokeNature.DECREASED_STATS); // [null, 'ぼうぎょ', ...]
-console.log(PokeNature.FAVORITE_FLAVORS); // [null, 'からい', ...]
-console.log(PokeNature.DISLIKED_FLAVORS); // [null, 'すっぱい', ...]
+// Convert Nature name into Nature id.
+console.log(PokeNature.toId('timid'));     // 10
+
+// Convert Nature id into Nature name.
+console.log(PokeNature.toName(10));          // 'timid'
+
+// Get a increased stat for Nature id, 10.
+console.log(PokeNature.getIncreasedStat(10));  // 'speed'
+
+// Get a decreased stat for Nature id, 10.
+console.log(PokeNature.getDecreasedStat(10));  // 'attack'
+
+// Get a favorite flavor for Nature id, 10.
+console.log(PokeNature.getFavoriteFlavor(10)); // 'sweet'
+
+// Get a disliked flavor for Nature id, 10.
+console.log(PokeNature.getDislikedFlavor(10)); // 'spicy'
+
+// Get the list of Nature names.
+console.log(PokeNature.NAMES);                 // ['hardy', 'lonely', ...]
+
+// Get the list of increased stats.
+console.log(PokeNature.INCREASED_STATS);       // [null, 'attack', ...]
+
+// Get the list of decreased stats.
+console.log(PokeNature.DECREASED_STATS);       // [null, 'defense', ...]
+
+// Get the list of favorite flavors.
+console.log(PokeNature.FAVORITE_FLAVORS);      // [null, 'spicy', ...]
+
+// Get the list of disliked flavors.
+console.log(PokeNature.DISLIKED_FLAVORS);      // [null, 'sour', ...]
 ```
-
-## Language
-| de | en | es | fr | it | ja | ko |
-|----|----|----|----|----|----|----|
-|    |    |    |    |    | ✓ |   |
 
 ## Build
 ```bash
