@@ -10,38 +10,26 @@ $ npm install @mizdra/poke-nature
 ```js
 import PokeNature from '@mizdra/poke-nature';
 
-// Convert Nature name into Nature id.
-console.log(PokeNature.toId('timid'));     // 10
-
-// Convert Nature id into Nature name.
-console.log(PokeNature.toName(10));          // 'timid'
-
-// Get a increased stat for Nature id, 10.
-console.log(PokeNature.getIncreasedStat(10));  // 'speed'
-
-// Get a decreased stat for Nature id, 10.
-console.log(PokeNature.getDecreasedStat(10));  // 'attack'
-
-// Get a favorite flavor for Nature id, 10.
-console.log(PokeNature.getFavoriteFlavor(10)); // 'sweet'
-
-// Get a disliked flavor for Nature id, 10.
-console.log(PokeNature.getDislikedFlavor(10)); // 'spicy'
-
 // Get the list of Nature names.
 console.log(PokeNature.NAMES);                 // ['hardy', 'lonely', ...]
 
-// Get the list of increased stats.
-console.log(PokeNature.INCREASED_STATS);       // [null, 'attack', ...]
+// Convert a Nature name into the id.
+console.log(PokeNature.toId('timid'));         // 10
 
-// Get the list of decreased stats.
-console.log(PokeNature.DECREASED_STATS);       // [null, 'defense', ...]
+// Convert a Nature id into the name.
+console.log(PokeNature.toName(10));            // 'timid'
 
-// Get the list of favorite flavors.
-console.log(PokeNature.FAVORITE_FLAVORS);      // [null, 'spicy', ...]
+// Get a increased stat for the specified id, 10.
+console.log(PokeNature.getIncreasedStat(10));  // 'speed'
 
-// Get the list of disliked flavors.
-console.log(PokeNature.DISLIKED_FLAVORS);      // [null, 'sour', ...]
+// Get a decreased stat for the specified id, 10.
+console.log(PokeNature.getDecreasedStat(10));  // 'attack'
+
+// Get a favorite flavor for the specified id, 10.
+console.log(PokeNature.getFavoriteFlavor(10)); // 'sweet'
+
+// Get a disliked flavor for the specified id, 10.
+console.log(PokeNature.getDislikedFlavor(10)); // 'spicy'
 ```
 
 ## Build
