@@ -17,54 +17,6 @@ describe('PokeNature', () => {
         assert.deepEqual(actual, expect);
     });
 
-    it('PokeNature.INCREASED_STATS', () => {
-        const actual: string[] = PokeNature.INCREASED_STATS;
-        const expect: string[] = [
-            null             , 'attack'         , 'attack'         , 'attack'         , 'attack',
-            'defense'        , null             , 'defense'        , 'defense'        , 'defense',
-            'speed'          , 'speed'          , null             , 'speed'          , 'speed',
-            'special-attack' , 'special-attack' , 'special-attack' , null             , 'special-attack',
-            'special-defense', 'special-defense', 'special-defense', 'special-defense', null
-        ];
-        assert.deepEqual(actual, expect);
-    });
-
-    it('PokeNature.DECREASED_STATS', () => {
-        const actual: string[] = PokeNature.DECREASED_STATS;
-        const expect: string[] = [
-            null    , 'defense', 'speed', 'special-attack', 'special-defense',
-            'attack', null     , 'speed', 'special-attack', 'special-defense',
-            'attack', 'defense', null   , 'special-attack', 'special-defense',
-            'attack', 'defense', 'speed', null            , 'special-defense',
-            'attack', 'defense', 'speed', 'special-attack', null
-        ];
-        assert.deepEqual(actual, expect);
-    });
-
-    it('PokeNature.FAVORITE_FLAVORS', () => {
-        const actual: string[] = PokeNature.FAVORITE_FLAVORS;
-        const expect: string[] = [
-            null    , 'spicy' , 'spicy' , 'spicy', 'spicy',
-            'sour'  , null    , 'sour'  , 'sour', 'sour',
-            'sweet' , 'sweet' , null    , 'sweet', 'sweet',
-            'dry'   , 'dry'   , 'dry'   , null, 'dry',
-            'bitter', 'bitter', 'bitter', 'bitter', null
-        ];
-        assert.deepEqual(actual, expect);
-    });
-
-    it('PokeNature.DISLIKED_FLAVORS', () => {
-        const actual: string[] = PokeNature.DISLIKED_FLAVORS;
-        const expect: string[] = [
-            null   , 'sour', 'sweet', 'dry', 'bitter',
-            'spicy', null  , 'sweet', 'dry', 'bitter',
-            'spicy', 'sour', null   , 'dry', 'bitter',
-            'spicy', 'sour', 'sweet', null , 'bitter',
-            'spicy', 'sour', 'sweet', 'dry', null
-        ];
-        assert.deepEqual(actual, expect);
-    });
-
     it('PokeNature.toId', () => {
         assert(PokeNature.toId('hardy')   === 0);
         assert(PokeNature.toId('lonely')  === 1);

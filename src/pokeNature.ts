@@ -15,7 +15,7 @@ export default class PokeNature {
     /**
      * The list of increased stats according to Nature id order.
      */
-    static INCREASED_STATS: string[] = [
+    private static INCREASED_STATS: string[] = [
         null             , 'attack'         , 'attack'         , 'attack'         , 'attack',
         'defense'        , null             , 'defense'        , 'defense'        , 'defense',
         'speed'          , 'speed'          , null             , 'speed'          , 'speed',
@@ -26,7 +26,7 @@ export default class PokeNature {
     /**
      * The list of decreased stats according to Nature id order.
      */
-    static DECREASED_STATS: string[] = [
+    private static DECREASED_STATS: string[] = [
         null    , 'defense', 'speed', 'special-attack', 'special-defense',
         'attack', null     , 'speed', 'special-attack', 'special-defense',
         'attack', 'defense', null   , 'special-attack', 'special-defense',
@@ -37,7 +37,7 @@ export default class PokeNature {
     /**
      * The list of favorite flavors according to Nature id order.
      */
-    static FAVORITE_FLAVORS: string[] = [
+    private static FAVORITE_FLAVORS: string[] = [
         null    , 'spicy' , 'spicy' , 'spicy', 'spicy',
         'sour'  , null    , 'sour'  , 'sour', 'sour',
         'sweet' , 'sweet' , null    , 'sweet', 'sweet',
@@ -48,7 +48,7 @@ export default class PokeNature {
     /**
      * The list of disliked flavors according to Nature id order.
      */
-    static DISLIKED_FLAVORS: string[] = [
+    private static DISLIKED_FLAVORS: string[] = [
         null   , 'sour', 'sweet', 'dry', 'bitter',
         'spicy', null  , 'sweet', 'dry', 'bitter',
         'spicy', 'sour', null   , 'dry', 'bitter',
