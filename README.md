@@ -59,33 +59,18 @@ console.log(natures.toString());
 ##### Tips :bulb:
 Nature id order is below.
 
-| id | name    |
-|:--:|---------|
-| 0  | hardy   |
-| 1  | lonely  |
-| 2  | brave   |
-| 3  | adamant |
-| 4  | naughty |
-| 5  | bold    |
-| 6  | docile  |
-| 7  | relaxed |
-| 8  | impish  |
-| 9  | lax     |
-| 10 | timid   |
-| 11 | hasty   |
-| 12 | serious |
-| 13 | jolly   |
-| 14 | naive   |
-| 15 | modest  |
-| 16 | mild    |
-| 17 | quiet   |
-| 18 | bashful |
-| 19 | rash    |
-| 20 | calm    |
-| 21 | gentle  |
-| 22 | sassy   |
-| 23 | careful |
-| 24 | quirky  |
+| id | name    | id | name    | id | name    |
+|:--:|---------|:--:|---------|:--:|---------|
+| 0  | hardy   | 10 | timid   | 20 | calm    |
+| 1  | lonely  | 11 | hasty   | 21 | gentle  |
+| 2  | brave   | 12 | serious | 22 | sassy   |
+| 3  | adamant | 13 | jolly   | 23 | careful |
+| 4  | naughty | 14 | naive   | 24 | quirky  |
+| 5  | bold    | 15 | modest  |    |         |
+| 6  | docile  | 16 | mild    |    |         |
+| 7  | relaxed | 17 | quiet   |    |         |
+| 8  | impish  | 18 | bashful |    |         |
+| 9  | lax     | 19 | rash    |    |         |
 
 
 
